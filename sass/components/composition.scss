@@ -34,6 +34,6 @@
   }
 
   &:hover &__photo:not(:hover) {
-    transform: scale(.95);
+    transform: scale(.95)translateY(-.5rem);
   }
 }
