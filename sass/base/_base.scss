@@ -8,8 +8,28 @@
 
 html {
   font-size: 62.5%;
-}
 
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12px
+    }
+  
+  @include respond(tab-land) {
+    font-size: 56.25%; //1rem = 9px
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; //1rem = 8px
+  }
+
+  @include respond(phone) {
+    font-size: 43.75%; //1rem = 7px
+  }
+}
 body {
   box-sizing: border-box;
+  padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }
